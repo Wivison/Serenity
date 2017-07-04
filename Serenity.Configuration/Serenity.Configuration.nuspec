@@ -19,19 +19,16 @@
         <dependency id="Serenity.Core" version="${version}" />
       </group>
       <group targetFramework=".NETStandard1.6">
-		<dependency id="Dapper" version="${netstandard1.6:Dapper}" />
         <dependency id="Newtonsoft.Json" version="${*:Newtonsoft.Json}" />
         <dependency id="Serenity.Core" version="${version}" />
-        <dependency id="System.Data.Common" version="${netstandard1.6:System.Data.Common}" />
-        <dependency id="System.Data.SqlClient" version="${netstandard1.6:System.Data.SqlClient}" />
-        <dependency id="System.Threading.Thread" version="${netstandard1.6:System.Threading.Thread}" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="${netstandard1.6:Microsoft.Extensions.Configuration.Abstractions}" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="${netstandard1.6:Microsoft.Extensions.Configuration.Binder}" />                
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="bin/${configuration}/Serenity.Data.dll" target="lib/net45" />
-    <file src="bin/${configuration}/Serenity.Data.pdb" target="lib/net45" />
-    <file src="bin/${configuration}/Serenity.Data.xml" target="lib/net45" />
-    <file src="bin/${configuration}/netstandard1.6/Serenity.Data.dll" target="lib/netstandard1.6" />	
+    <file src="bin/${configuration}/Serenity.Configuration.dll" target="lib/net45" />
+    <file src="bin/${configuration}/Serenity.Configuration.pdb" target="lib/net45" />
+    <file src="bin/${configuration}/netstandard1.6/Serenity.Configuration.dll" target="lib/netstandard1.6" />
   </files>
 </package>
